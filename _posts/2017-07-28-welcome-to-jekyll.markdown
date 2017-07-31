@@ -24,6 +24,8 @@ The other issues are that the environement variables change between the deployme
 
 So all in all I'm a bit sick of Azure. I've dropped the additional files that the [rimdev][3] tutorial asked for, and I'm jumping ship to GitHub pages.  Let's see how that goes.
 
+I'll be using the `gh-pages` branch so I can backup drafts without formally publishing them.
+
 
 [1]: https://gordon-breuer.de/azure/2016/03/01/Publish-a-website-with-Jekyll-and-Github-on-Windows-Azure.html
 [2]: https://gordon-breuer.de/
