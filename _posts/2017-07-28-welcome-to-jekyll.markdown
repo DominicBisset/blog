@@ -10,7 +10,19 @@ Mostly I'm following the [Publish a website with Jekyll and Github on Windows Az
 
 It's not working so well now.  I can't get it to do build server-side.  Further investigation suggests the extension installer is failing.  
 
-I'm now trying alternative installation instructions from [Deploying Jekyll to Windows Azure App Services][3]
+I'm now trying alternative installation instructions from [Deploying Jekyll to Windows Azure App Services][3].
+
+The alternative approach hit different a different snag.  The build routine failed while trying to install `bundler`, ostentibly due to some code signing issue.  The solution is supposedly to install the latest `gem-update`.  But theoretically the build routine installs the latest version anyway, so it seems to hide the problem.
+
+All my debugging is hampered by the fact that that, while I do have non-superuser console access through the azure portal to the server the code is running on, the console refuses to acknowledge the shift key.  It's a fairly fundamental flaw - want to cd to the `d:\local\temp` directory from the `d:\home\site\wwwroot` directory?  You can't do it absolutely because you can't type colons;  have fun going the long way around
+
+``` cmd
+cd ..\..\..\local\temp
+```
+
+The other issues are that the environement variables change between the deployment script and the console, and it takes three to five seconds for every pane to load so it takes ages to flit around investigating a problem.
+
+So all in all I'm a bit sick of Azure. I've dropped the additional files that the [rimdev][3] tutorial asked for, and I'm jumping ship to GitHub pages.  Let's see how that goes.
 
 
 [1]: https://gordon-breuer.de/azure/2016/03/01/Publish-a-website-with-Jekyll-and-Github-on-Windows-Azure.html
