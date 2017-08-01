@@ -18,10 +18,10 @@ email: "mail@dominicbisset.co.uk"
 description: > # this means to ignore newlines until "baseurl:"
   A blog that I'll probably never update.
   Mostly just an opportunity to play with some new tech.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dominicbisset.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://dominicbisset.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: dominicbisset
+github_username:  dominicbisset
 
 # Build settings
 markdown: kramdown
