@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Playing with Azure and Jekyll"
 date:   2017-07-28 21:45:09 +0100
 categories: Azure Jekyll Meta
@@ -25,6 +25,8 @@ The other issues are that the environement variables change between the deployme
 So all in all I'm a bit sick of Azure. I've dropped the additional files that the [rimdev][3] tutorial asked for, and I'm jumping ship to GitHub pages.  Let's see how that goes.
 
 I'll be using the `gh-pages` branch so I can backup drafts without formally publishing them.
+
+I'm now running into issues with my home page being blank.  Inspecting the page suggests the `body` is empty;  the `head` contents seem to vary between being empty and having on or more large `style` blocks.  Investigation suggests it could be to do with using gems that github doesn't allow, but I'm surprised I don't get compliation errors.
 
 
 [1]: https://gordon-breuer.de/azure/2016/03/01/Publish-a-website-with-Jekyll-and-Github-on-Windows-Azure.html
