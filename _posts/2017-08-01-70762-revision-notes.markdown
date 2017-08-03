@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "Revision Notes - 70-762 Developing SQL Databases - Part 1"
+date:   2017-08-01 18:30:00 +0100
+categories: Microsoft Certification 70762 Revision
+---
+# Part 1 - Designing and Implementing Database Objects
+
+* Base on business reqs. findn nouns, then attributes, then identifiers for rows
+* schemas - security/organisational grouplings of tables and code
+* normalisation - to be in stricter form have to comply to looser forms
+  * shape of table - relation - no duplicaated rows - id by key, including artificial keys; prefer natural if possible - artifical has  no business meaning
+    * 1NF
+      * atomic (each col represents 1 val) - split into multpile cols - avoids partial queries on cols
+      * same amount of data per row (no arrays in cells) - split if fixed no, or new table
+  * relation of non key attributes to key  - prevent redundant data going out of sync
+    * 2NF attributes must be about whole pk, not subset therof (comp. keys only)
+    * 3NF attributes must be about pk, not other attributes
+      * 3NF = boyce-codd NF
+      * 
+
+
