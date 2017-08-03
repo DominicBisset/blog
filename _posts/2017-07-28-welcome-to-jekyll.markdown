@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Playing with Azure and Jekyll"
 date:   2017-07-28 21:45:09 +0100
 categories: Azure Jekyll Meta
